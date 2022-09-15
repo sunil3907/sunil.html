@@ -1,0 +1,28 @@
+(extrahours1 * parseInt(extrarate1)));
+}
+else
+{
+cal2=parseInt(e2) * parseInt(r2);
+}
+document.writeln( "<h1> Employee2 Gross Wage is: " + cal2 + "</h1>" );
+var cal3;
+if(parseInt(e3)>40)
+{
+var extrahours2 = parseInt(parseInt(e3)-40);
+var extrarate2= parseInt(r3) + (parseInt(r3) / 2 );
+cal3= ((40 * parseInt(r3))+ (extrahours2 * parseInt(extrarate2)));
+}
+else
+{
+cal3=parseInt(e3) * parseInt(r3);
+}
+document.writeln( "<h1> Employee3 Gross Wage is: " + cal3+ "</h1>" );
+// -->
+</script>
+</head>
+<body>
+<h1><center>Pay Day</center>
+<hr />
+<p> Click Refresh(F5) or reload to run this script again</p>
+</body>
+</html>

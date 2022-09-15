@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Pay Day </title>
+<script type="text/javascript">
+<!--
+var e1;
+var r1;
+var e2;
+var r2;
+var e3;
+var r3;
+e1 = window.prompt("Enter Number of Hours Employee1 worked last week:");
+r1 = window.prompt("Enter hourly wage rate for Employee1:");
+e2 = window.prompt("Enter Number of Hours Employee2 worked last week:");
+r2 = window.prompt("Enter hourly wage rate for Employee2:");
+e3 = window.prompt("Enter Number of Hours Employee3 worked last week:");
+r3 = window.prompt("Enter hourly wage rate for Employee3:");
+var cal1;
+if(parseInt(e1)>40)
+{
+var extrahours = parseInt(parseInt(e1)-40);
+var extrarate= parseInt(r1) + (parseInt(r1) / 2 );
+cal1= ((40 * parseInt(r1))+ (extrahours * parseInt(extrarate)));
+}
+else
+{
+cal1=parseInt(e1) * parseInt(r1);
+}
+document.writeln( "<h1> Employee1 Gross Wage is: " + cal1 + "</h1>" );
+var cal2;
+if(parseInt(e2)>40)
+{
+var extrahours1 = parseInt(parseInt(e2)-40);
+var extrarate1= parseInt(r2) + (parseInt(r2) / 2 );
+cal2= ((40 * parseInt(r2))
